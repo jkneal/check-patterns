@@ -1,0 +1,140 @@
+body {
+  background-color: #E7E3CE;
+}
+
+.pattern-container {
+
+}
+
+.pattern-container .panel-body {
+  display: flex;
+}
+
+.pattern-list {
+  max-height: calc(100vh - 100px);
+  overflow-y: scroll;
+  padding-right: 1.5rem;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+}
+
+.pattern-list .list-group-item {
+  padding: 0.3rem 3rem;
+  text-align: center;
+}
+
+.pattern-list .panel-heading {
+  padding: 0.3rem 2rem;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.pattern-list .panel-body {
+  padding: 0.8rem 2rem;
+  text-align: center;
+  font-size: .95em;
+  flex-direction: column;
+}
+
+.pattern-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.pattern-viewer {
+  border: 1px solid #E2E2E2;
+  padding: 1rem;
+  text-align: center;
+}
+
+.pattern-viewer h3 {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 22px;
+}
+
+.pattern-subtitle {
+  margin-bottom: 10px;
+}
+
+.pattern-subtitle pre {
+  background: none;
+  border: none;
+  font-size: 1.1em;
+  padding-top: 5px;
+}
+
+.pattern-player-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pattern-player {
+  padding-right: 4rem;
+}
+
+.pattern-player .g5buttons {
+  text-align: center;
+}
+
+.pattern-player .g5button {
+  font-size: 16px;
+  margin-right: 1rem;
+  color: #8892A0;
+  display: block;
+}
+
+.g5button {
+  width: 56px;
+}
+
+.g5button.g5play.enabled, .g5button.g5stop.enabled {
+  display: inherit;
+}
+
+.g5button.g5play.disabled, .g5button.g5stop.disabled {
+  display: none;
+}
+
+.pattern-player .g5button.g5play.enabled,.g5button.g5stop:hover {
+  color: #1D6895;
+}
+
+.navbar {
+  background-color: #053F64;
+  color: white;
+}
+
+.pattern-tempo, .pattern-options, .pattern-samples {
+  margin-top: 3rem;
+}
+
+.pattern-samples {
+  align-self: flex-start;
+  font-size: .9em;
+}
+
+.pattern-samples .panel-heading {
+  background-color: #E7E3CE;
+}
+
+.pattern-samples .list-group-item {
+  padding: 0.3rem 2rem;
+  display: flex;
+}
+
+.pattern-samples .panel-heading {
+  padding: 0.3rem 2rem;
+  color: #4A3C31;
+}
+
+.tempo-control {
+  border: none;
+  box-shadow: none;
+}
+
+.radio:first-of-type {
+  margin-top: 0;
+}
