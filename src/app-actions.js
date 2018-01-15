@@ -1,7 +1,8 @@
 import Reflux from 'reflux'
 
 const actions = Reflux.createActions({
-  loadPattern: {}
+  loadPattern: {},
+  setTempo: {}
 })
 
 export default actions

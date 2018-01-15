@@ -711,7 +711,9 @@ var Gapless5FileList = function(inPlayList, inStartingTrack, inShuffle) {
 		if ( index <= that.currentItem )
 			that.currentItem = that.currentItem + 1;
 
-		that.trackNumber = that.current[that.currentItem]._index;
+    if (that.current[that.currentItem]) {
+      that.trackNumber = that.current[that.currentItem]._index;
+    }
 	}
 
 	// Remove a song from the FileList object.
@@ -736,8 +738,9 @@ var Gapless5FileList = function(inPlayList, inStartingTrack, inShuffle) {
 		if (( index < that.currentItem ) || ( index >= that.previous.length - 1))
 			if ( that.currentItem > 0 )
 				that.currentItem = that.currentItem - 1;
-
-		that.trackNumber = that.current[that.currentItem]._index;
+    if (that.current[that.currentItem]) {
+      that.trackNumber = that.current[that.currentItem]._index;
+    }
 	}
 
 	// Get an array of songfile paths from this object, appropriate for 
@@ -1539,8 +1542,8 @@ var Init = function(elem_id, options, tickMS) {
 	player_html += '</div>';
 	player_html += '<div class="g5buttons" id="g5buttons' + that.id + '">';
 	player_html += '<button class="g5button g5prev" id="prev' + that.id + '"/>';
-	player_html += '<button class="g5button g5play" id="play' + that.id + '"><i class="fa fa-play" aria-hidden="true"></i> Play</button>';
-	player_html += '<button class="g5button g5stop" id="stop' + that.id + '"><i class="fa fa-stop" aria-hidden="true"></i> Stop</button>';
+	player_html += '<button class="g5button g5play" id="play' + that.id + '"><i class="fa fa-play" aria-hidden="true"></i> ' + (options.addButtonLabels ? 'Listen' : '') + '</button>';
+	player_html += '<button class="g5button g5stop" id="stop' + that.id + '"><i class="fa fa-stop" aria-hidden="true"></i> ' + (options.addButtonLabels ? 'Stop' : '') + '</button>';
 	player_html += '<button class="g5button g5shuffle" id="shuffle' + that.id + '"/>';
 	player_html += '<button class="g5button g5next" id="next' + that.id + '"/>';
 

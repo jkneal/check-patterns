@@ -1,17 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {Router, Route, IndexRoute, browserHistory} from 'react-router'
-import createHistory from 'history/createBrowserHistory'
+import {Router, Route, IndexRoute} from 'react-router'
 
+import {history} from './config'
 import App from './App'
 import Home from './Home'
-
-const history = createHistory()
+import Resources from './Resources'
 
 ReactDOM.render((
-  <Router history={browserHistory}>
+  <Router history={history}>
     <Route path="/" component={App}>
       <IndexRoute component={Home}/>
+      <Route path="resources" component={Resources}/>
     </Route>
   </Router>
 ), document.getElementById('app'))
