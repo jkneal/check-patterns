@@ -13,11 +13,13 @@ const data = {
           patterns: [
             {
               id: 1,
+              titlePrefix: 'Duple',
               title: 'Variation 1',
               subTitle: 'e & a'
             },
             {
               id: 2,
+              titlePrefix: 'Duple',
               title: 'Variation 2',
               subTitle: '1   & a',
               examples: [
@@ -33,11 +35,15 @@ const data = {
             },
             {
               id: 3,
-              title: 'Variation 3'
+              titlePrefix: 'Duple',
+              title: 'Variation 3',
+              subTitle: '1 e   a'
             },
             {
               id: 4,
-              title: 'Variation 4'
+              titlePrefix: 'Duple',
+              title: 'Variation 4',
+              subTitle: '1 e &'
             }                                 
           ]
         },
@@ -46,27 +52,39 @@ const data = {
           patterns: [
             {
               id: 5,
-              title: 'Variation 5'
+              titlePrefix: 'Duple',
+              title: 'Variation 5',
+              subTitle: '1 e'
             },
             {
               id: 6,
-              title: 'Variation 6'
+              titlePrefix: 'Duple',
+              title: 'Variation 6',
+              subTitle: '& a'
             },
             {
               id: 7,
-              title: 'Variation 7'
+              titlePrefix: 'Duple',
+              title: 'Variation 7',
+              subTitle: '1     a'
             },
             {
               id: 8,
-              title: 'Variation 8'
+              titlePrefix: 'Duple',
+              title: 'Variation 8',
+              subTitle: 'e &'
             },
             {
               id: 9,
-              title: 'Variation 9'
+              titlePrefix: 'Duple',
+              title: 'Variation 9',
+              subTitle: 'e   a'
             },
             {
               id: 10,
-              title: 'Variation 10'
+              titlePrefix: 'Duple',
+              title: 'Variation 10',
+              subTitle: '1   &'
             }                                                         
           ]
         },
@@ -75,19 +93,27 @@ const data = {
           patterns: [
             {
               id: 11,
-              title: 'Variation 11'
+              titlePrefix: 'Duple',
+              title: 'Variation 11',
+              subTitle: 'e'
             },
             {
               id: 12,
-              title: 'Variation 12'
+              titlePrefix: 'Duple',
+              title: 'Variation 12',
+              subTitle: '&'
             },
             {
               id: 13,
-              title: 'Variation 13'
+              titlePrefix: 'Duple',
+              title: 'Variation 13',
+              subTitle: 'a'
             },
             {
               id: 14,
-              title: 'Variation 14'
+              titlePrefix: 'Duple',
+              title: 'Variation 14',
+              subTitle: '1'
             }                                 
           ]
         }                 
@@ -101,15 +127,21 @@ const data = {
           patterns: [
             {
               id: 15,
-              title: 'Variation 1'
+              titlePrefix: 'Triplet',
+              title: 'Variation 1',
+              subTitle: '& a'
             },
             {
               id: 16,
-              title: 'Variation 2'
+              titlePrefix: 'Triplet',
+              title: 'Variation 2',
+              subTitle: '1 &'
             },
             {
               id: 17,
-              title: 'Variation 3'
+              titlePrefix: 'Triplet',
+              title: 'Variation 3',
+              subTitle: '1    a'
             }                               
           ]
         },
@@ -118,15 +150,21 @@ const data = {
           patterns: [
             {
               id: 18,
-              title: 'Variation 4'
+              titlePrefix: 'Triplet',
+              title: 'Variation 4',
+              subTitle: '&'
             },
             {
               id: 19,
-              title: 'Variation 5'
+              titlePrefix: 'Triplet',
+              title: 'Variation 5',
+              subTitle: 'a'
             },
             {
               id: 20,
-              title: 'Variation 6'
+              titlePrefix: 'Triplet',
+              title: 'Variation 6',
+              subTitle: '1'
             }                                
           ]
         }        

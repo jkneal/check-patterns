@@ -2,6 +2,10 @@ body {
   background-color: #E7E3CE;
 }
 
+h3 {
+  font-weight: 600;
+}
+
 .pattern-container .panel-body {
   display: flex;
 }
