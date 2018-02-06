@@ -48,9 +48,22 @@ export default React.createClass({
             </Navbar.Collapse>
           </Navbar>
           <div className="container">
+            {appData.isIE && <IEWarning/>}
             {this.props.children}
-          </div>
+          </div>      
         </div>
       )
     }
   })
+
+  const IEWarning = () => {
+    return (
+    <Alert bsStyle="warning">
+      <p><strong>Audio Player Not Supported in IE</strong></p>
+      <p>
+        This website uses an audio player that is not supported with Internet Exployer. Please use a different browser,
+        or you may download the audio files <a href="audio/patterns.zip">here</a>. 
+      </p>
+    </Alert>
+    )
+  }

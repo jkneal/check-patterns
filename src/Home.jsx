@@ -1,10 +1,12 @@
 import React from 'react'
 import Reflux from 'reflux'
 import {Panel} from 'react-bootstrap'
+import MediaQuery from 'react-responsive'
 
 import appStore from './app-store'
 
 import PatternList from './layout/PatternList'
+import PatternListMobile from './layout/PatternListMobile'
 import PatternViewer from './layout/PatternViewer'
 import SongExamples from './layout/SongExamples'
 import PatternControls from './layout/PatternControls'
@@ -23,17 +25,31 @@ export default React.createClass({
 
       return (
         <Panel className="pattern-container">
-          <PatternList patternGroups={patternGroups} loadedPattern={loadedPattern}/>
+          <MediaQuery minWidth={620}>
+            <PatternList patternGroups={patternGroups} loadedPattern={loadedPattern}/>
+          </MediaQuery>
+
+          <MediaQuery maxWidth={620}>
+            <PatternListMobile patternGroups={patternGroups} loadedPattern={loadedPattern}/>
+          </MediaQuery>
 
           <div className="pattern-main-wrapper">
             <div className="pattern-main">   
               <PatternViewer pattern={loadedPattern}/>
-              <div className="pattern-samples-wrapper">
-                  <SongExamples examples={loadedPattern.examples}/>
-              </div>
+              <MediaQuery minWidth={850}>
+                <div className="pattern-samples-wrapper">
+                    <SongExamples examples={loadedPattern.examples}/>
+                </div>
+              </MediaQuery>
             </div>
 
             <PatternControls pattern={loadedPattern} patternOptions={loadedPatternOptions}/>
+
+            <MediaQuery maxWidth={850}>
+                <div className="pattern-samples-wrapper-bottom">
+                    <SongExamples examples={loadedPattern.examples}/>
+                </div>
+            </MediaQuery>
           </div>
         </Panel>
       )

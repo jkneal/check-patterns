@@ -33,9 +33,19 @@ export default React.createClass({
       addButtonLabels: props.addButtonLabels
     })
 
-    if (props.onplay) {
-      this.gaplessPlayer.onplay = props.onplay
+    this.gaplessPlayer.onplay = e => {
+      $(document).trigger('gapless:play', [props.id])
+      if (props.onplay) {
+        props.onplay(e)
+      }  
     }
+
+    $(document).on('gapless:play', (e, playerId) => {
+      if (playerId !== props.id && this.gaplessPlayer.isPlaying()) {
+        this.gaplessPlayer.stop()
+      }
+    })
+
     if (props.onstop) {
       this.gaplessPlayer.onstop = props.onstop
     }
