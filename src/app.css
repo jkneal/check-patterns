@@ -266,6 +266,16 @@ h3 {
   flex: 1;
 }
 
+.list-group-item > .badge {
+  font-size: 10px;
+  margin-left: .8rem;
+  background-color: #17a2b8;
+}
+
+.tips ul {
+  margin-left: -20px;
+}
+
 @media all and (min-width: 0px) {
   .container {
     width: 100%!important;

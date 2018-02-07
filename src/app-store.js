@@ -19,7 +19,8 @@ const data = {
               examples: [
                 {
                   file: 'audio/primetime.mp3',
-                  title: 'Primetime - Ratatat'
+                  title: 'Primetime - Ratatat',
+                  tempo: 75
                 }               
               ]
             },
@@ -31,11 +32,13 @@ const data = {
               examples: [
                 {
                   file: 'audio/letemin.mp3',
-                  title: "Let 'Em In - Wings"
+                  title: "Let 'Em In - Wings",
+                  tempo: 90
                 },
                 {
                   file: 'audio/wonderful_tonight.mp3',
-                  title: 'Wonderful Tonight - Eric Clapton'
+                  title: 'Wonderful Tonight - Eric Clapton',
+                  tempo: 95
                 }                
               ]
             },
@@ -47,11 +50,13 @@ const data = {
               examples: [
                 {
                   file: 'audio/watermelonman.mp3',
-                  title: 'Watermelonman - Herbie Hancock'
+                  title: 'Watermelonman - Herbie Hancock',
+                  tempo: 75
                 },
                 {
                   file: 'audio/didjitalvibrations.mp3',
-                  title: 'Didjital Vibrations - Jamiroquai'
+                  title: 'Didjital Vibrations - Jamiroquai',
+                  tempo: 80
                 }              
               ]
             },
@@ -62,8 +67,9 @@ const data = {
               subTitle: '1 e &',
               examples: [
                 {
-                  file: 'audio/maggiesfarm.mp3',
-                  title: "Maggie's Farm - Rage Against The Machine"
+                  file: 'audio/countach.mp3',
+                  title: "Countach - Ratatat",
+                  tempo: 95
                 }            
               ]
             }                                 
@@ -80,12 +86,19 @@ const data = {
               examples: [
                 {
                   file: 'audio/41.mp3',
-                  title: '#41 - Dave Matthews Band'
+                  title: '#41 - Dave Matthews Band',
+                  tempo: 110
                 },
                 {
                   file: 'audio/sly.mp3',
-                  title: 'Sly - Herbie Hancock'
-                }               
+                  title: 'Sly - Herbie Hancock',
+                  tempo: 100
+                },
+                {
+                  file: 'audio/bringonthenight.mp3',
+                  title: 'Bring On The Night - The Police',
+                  tempo: 110
+                }              
               ]
             },
             {
@@ -96,8 +109,9 @@ const data = {
               examples: [
                 {
                   file: 'audio/peg.mp3',
-                  title: 'Peg - Steely Dan'
-                }              
+                  title: 'Peg - Steely Dan',
+                  tempo: 115
+                }             
               ]
             },
             {
@@ -108,11 +122,13 @@ const data = {
               examples: [
                 {
                   file: 'audio/echoes.mp3',
-                  title: 'Pink Floyd - Echoes'
+                  title: 'Pink Floyd - Echoes',
+                  tempo: 70
                 },
                 {
                   file: 'audio/see_bright_lights.mp3',
-                  title: 'R&L Thompson - I Want To See The Bright Lights Tonight'
+                  title: 'R&L Thompson - I Want To See The Bright Lights',
+                  tempo: 70
                 }               
               ]
             },
@@ -124,7 +140,8 @@ const data = {
               examples: [
                 {
                   file: 'audio/shot_the_sheriff.mp3',
-                  title: 'Eric Clapton - I Shot The Sheriff'
+                  title: 'Eric Clapton - I Shot The Sheriff',
+                  tempo: 95
                 }              
               ]
             },
@@ -136,8 +153,14 @@ const data = {
               examples: [
                 {
                   file: 'audio/loveisstrange.mp3',
-                  title: 'Love Is Strange - Wings'
-                }              
+                  title: 'Love Is Strange - Wings',
+                  tempo: 60
+                },
+                {
+                  file: 'audio/primetime.mp3',
+                  title: 'Primetime - Ratatat',
+                  tempo: 75
+                }               
               ]
             },
             {
@@ -148,7 +171,8 @@ const data = {
               examples: [
                 {
                   file: 'audio/doitagain.mp3',
-                  title: 'Do It Again - Steely Dan'
+                  title: 'Do It Again - Steely Dan',
+                  tempo: 120
                 }              
               ]
             }                                                         
@@ -171,11 +195,13 @@ const data = {
               examples: [
                 {
                   file: 'audio/twostep.mp3',
-                  title: 'Two Step - Dave Matthews Band'
+                  title: 'Two Step - Dave Matthews Band',
+                  tempo: 120
                 },
                 {
                   file: 'audio/goodtimecharlie.mp3',
-                  title: "Good Time Charlie - Danny O'Keefe"
+                  title: "Good Time Charlie - Danny O'Keefe",
+                  tempo: 85
                 }               
               ]
             },
@@ -187,7 +213,13 @@ const data = {
               examples: [
                 {
                   file: 'audio/avalon.mp3',
-                  title: 'Avalon - Roxy Music'
+                  title: 'Avalon - Roxy Music',
+                  tempo: 70
+                },
+                {
+                  file: 'audio/wildcat.mp3',
+                  title: "Wildcat - Ratatat",
+                  tempo: 115
                 }              
               ]
             },
@@ -199,8 +231,14 @@ const data = {
               examples: [
                 {
                   file: 'audio/letemin2.mp3',
-                  title: "Let 'Em In - Wings"
-                }                
+                  title: "Let 'Em In - Wings",
+                  tempo: 90
+                },
+                {
+                  file: 'audio/loudpipes.mp3',
+                  title: "Loud Pipes - Ratatat",
+                  tempo: 90
+                }               
               ]
             }                                 
           ]
@@ -217,7 +255,14 @@ const data = {
               id: 15,
               titlePrefix: 'Triplet',
               title: 'Variation 1',
-              subTitle: '& a'
+              subTitle: '& a',
+              examples: [
+                {
+                  file: 'audio/murderbynumbers.mp3',
+                  title: 'Murder By Numbers - The Police',
+                  tempo: 95
+                }              
+              ]
             },
             {
               id: 16,
@@ -229,7 +274,14 @@ const data = {
               id: 17,
               titlePrefix: 'Triplet',
               title: 'Variation 3',
-              subTitle: '1    a'
+              subTitle: '1    a',
+              examples: [
+                {
+                  file: 'audio/albatross.mp3',
+                  title: 'Albatross - Fleetwood Mac',
+                  tempo: 65
+                }              
+              ]
             }                               
           ]
         },
@@ -246,7 +298,14 @@ const data = {
               id: 19,
               titlePrefix: 'Triplet',
               title: 'Variation 5',
-              subTitle: 'a'
+              subTitle: 'a',
+              examples: [
+                {
+                  file: 'audio/murderbynumbers.mp3',
+                  title: 'Murder By Numbers - The Police',
+                  tempo: 95
+                }              
+              ]
             },
             {
               id: 20,

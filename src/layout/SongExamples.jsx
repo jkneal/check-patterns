@@ -12,7 +12,8 @@ export default ({examples}) => {
           {map(examples, (example, key) => (
               <ListGroupItem>
                 <AudioPlayer id={'ex' + key + '-player'} file={example.file}/>
-                {example.title}
+                {example.title} 
+                <span className="badge badge-info">{example.tempo}</span>
               </ListGroupItem>
             ))}
         </ListGroup>

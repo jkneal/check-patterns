@@ -9,7 +9,8 @@ export default React.createClass({
         <Panel className="resources-container">
           <h3><i className="fa fa-file-audio-o" aria-hidden="true"></i> Audio Files</h3>
           <p>The audio files on this website are continuously looped for prolonged listening.
-          As you are listening, you can select different tempos or patterns without stopping the audio player.
+          As you are listening, you can select different tempos or patterns without stopping the audio player. 
+          However, if the visual indicator gets off with the beat, try stopping and restarting the playback.
           </p>
 
           <p>
@@ -27,6 +28,20 @@ export default React.createClass({
             </p>
           </Alert>
 
+          <h3><i className="fa fa-thumbs-o-up" aria-hidden="true"></i> Tips</h3>
+
+          <div className="tips">
+            <p>
+              <ul>
+                <li><b>Listen First!</b> Listen to the examples before you do any playing, and listen a lot (that is what the looping is for!). Listen and enjoy the whole, then break apart the parts and rhythms. Note: each sample emphasizes the check pattern, but there is a lot more going on than just that one rhythm!</li>
+                <li>Next to each song example is a rough tempo marking (to the nearest 5 BPMs). Go back and forth between listening to the check pattern at that tempo and the song example (remember you can just click the play button of another sample without stopping what you are currently playing - try switching the playback right on the downbeat of 1).</li>
+                <li>Tap the rhythm while listening (on your head might be helpful, just kidding!). Tap your foot (or mark time) to the downbeat while listening (that is what the visual indicator is for). Do both of the previous together.</li>
+                <li>Sing the rhythmic syllables while listening.</li>
+                <li>Now go make some noise on your instrument (aka play the check pattern).</li>
+              </ul>
+            </p>
+          </div>
+
           <h3><i className="fa fa-headphones" aria-hidden="true"></i> More Listening</h3>
 
           <div className="more-listening">
@@ -36,7 +51,7 @@ export default React.createClass({
             </div>
 
             <div className="more-listening-text">
-              To hear the full songs for examples on this website, plus other great songs for listening, checkout the Spotify Check Patterns playlist.
+              To hear the full length example songs on this website, plus other great songs for listening, checkout the Spotify Check Patterns playlist.
               You will need a Spotify account, which you can get for free (with limited Ads).
             </div>
           </div>
@@ -46,7 +61,7 @@ export default React.createClass({
           <div className="book-resource">
             <div><img src="images/book-cover-check-patterns.jpg"/></div>
             <div className="book-resource-text">
-              <a href="https://www.amazon.com/Percussionists-Guide-Check-Patterns-Fundamental/dp/073905807X">A Percussionist's Guide to Check Patterns</a> by Thom Hannum
+              <a target="_blank" href="https://www.amazon.com/Percussionists-Guide-Check-Patterns-Fundamental/dp/073905807X">A Percussionist's Guide to Check Patterns</a> by Thom Hannum
               <p></p>
               <p><small>
               An ideal book for private lessons, small group instruction or percussion ensemble rehearsals, A Percussionist's Guide to Check Patterns focuses on mastering the essential basics of reading and controlling one-beat rhythmic patterns. It provides a systematic approach to sticking duple- and triplet-based rhythms that all beginning to advanced percussionists encounter in everyday music. All musical examples are written for non-pitched percussion, keyboards and drumset, and the step-by-step presentation is guaranteed to improve syncopation control and coordination. 
@@ -57,7 +72,7 @@ export default React.createClass({
           <div className="book-resource">
             <div><img src="images/book-cover-time-awareness.jpg"/></div>
             <div className="book-resource-text">
-              <a href="https://www.amazon.com/Time-Awareness-Musicians-Book-Audio/dp/0739038540">Time Awareness: For All Musicians</a> by Peter Erskine
+              <a target="_blank" href="https://www.amazon.com/Time-Awareness-Musicians-Book-Audio/dp/0739038540">Time Awareness: For All Musicians</a> by Peter Erskine
               <p></p>
               <p><small>
               This book provides a handy study, practice and resource guide for all musicians who are seeking to improve their music-making abilities. Though written by a drummer, the text exercises and etudes in this book are not for drummers only! And while a good number of the exercises can be sung or played on any instrument, the reader is encouraged to tap these rhythms out: "playing" your thighs with your hands, for example, will work just fine. The examples can be performed solo or in a small group. Includes: -Training for all musicians -Specific exercises for jazz phrasing, pop/funk and classical music ...
@@ -68,7 +83,7 @@ export default React.createClass({
           <div className="book-resource">
             <div><img src="images/book-cover-syncopation.jpg"/></div>
             <div className="book-resource-text">
-              <a href="https://www.amazon.com/Progressive-Syncopation-Modern-Drummer-Publications/dp/0882847953/ref=pd_sbs_14_6?_encoding=UTF8&pd_rd_i=0882847953&pd_rd_r=BBAV9BDH260K9TWVRS6M&pd_rd_w=djQne&pd_rd_wg=hBiN9&psc=1&refRID=BBAV9BDH260K9TWVRS6M">Progressive Steps to Syncopation for the Modern Drummer</a> by Ted Reed
+              <a target="_blank" href="https://www.amazon.com/Progressive-Syncopation-Modern-Drummer-Publications/dp/0882847953/ref=pd_sbs_14_6?_encoding=UTF8&pd_rd_i=0882847953&pd_rd_r=BBAV9BDH260K9TWVRS6M&pd_rd_w=djQne&pd_rd_wg=hBiN9&psc=1&refRID=BBAV9BDH260K9TWVRS6M">Progressive Steps to Syncopation for the Modern Drummer</a> by Ted Reed
               <p></p>
               <p><small>
               Voted second on Modern Drummer's list of 25 Greatest Drum Books in 1993, Progressive Steps to Syncopation for the Modern Drummer is one of the most versatile and practical works ever written for drums. Created exclusively to address syncopation, it has earned its place as a standard tool for teaching beginning drummers syncopation and strengthening reading skills. This book includes many accented eighths, dotted eighths and sixteenths, eighth-note triplets and sixteenth notes for extended solos. In addition, teachers can develop many of their own examples from it.
@@ -79,7 +94,7 @@ export default React.createClass({
            <div className="book-resource">
             <div><img src="images/book-cover-universal-rhythms.jpg"/></div>
             <div className="book-resource-text">
-              <a href="https://www.amazon.com/Universal-Rhythms-Drummers-Unlock-Creativity/dp/0739061526/ref=sr_1_1?ie=UTF8&qid=1516492426&sr=8-1&keywords=the+universal+rhythm">Universal Rhythms for Drummers</a> by Dave DiCenso
+              <a target="_blank" href="https://www.amazon.com/Universal-Rhythms-Drummers-Unlock-Creativity/dp/0739061526/ref=sr_1_1?ie=UTF8&qid=1516492426&sr=8-1&keywords=the+universal+rhythm">Universal Rhythms for Drummers</a> by Dave DiCenso
               <p></p>
               <p><small>
               Written by drummer/educator Dave DiCenso, Universal Rhythms for Drumset is a workbook with a concept designed to help demystify the drummer's creative process. Working from the notion that the majority of Western music is built upon five simple rhythmic phrases, DiCenso offers creative tools that demonstrate how to identify, interpret, and manipulate this five-rhythm alphabet in order to improve one's understanding of rhythm as a language and one's ability to speak it on a set of drums. 
